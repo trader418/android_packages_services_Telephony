@@ -579,12 +579,22 @@ public class NotificationMgr {
         mMissedCalls.add(0, new MissedCallInfo(callName, number, date));
 
         Notification.Builder builder = new Notification.Builder(mContext);
-        builder.setSmallIcon(android.R.drawable.stat_notify_missed_call)
+        if (Settings.System.getInt(mContext.getContentResolver(),
+                    Settings.System.KEY_MISSED_CALL_BREATH, 0) == 1) {
+            builder.setSmallIcon(R.drawable.stat_notify_missed_call_breath)
                 .setTicker(mContext.getString(R.string.notification_missedCallTicker, callName))
                 .setWhen(date)
                 .setContentIntent(pendingCallLogIntent)
                 .setAutoCancel(true)
                 .setDeleteIntent(createClearMissedCallsIntent());
+        } else {
+            builder.setSmallIcon(android.R.drawable.stat_notify_missed_call)
+                .setTicker(mContext.getString(R.string.notification_missedCallTicker, callName))
+                .setWhen(date)
+                .setContentIntent(pendingCallLogIntent)
+                .setAutoCancel(true)
+                .setDeleteIntent(createClearMissedCallsIntent());
+        }
 
         // display the first line of the notification:
         // 1 missed call: call name
@@ -948,9 +958,14 @@ public class NotificationMgr {
     /* package */ void updateMwi(boolean visible) {
         if (DBG) log("updateMwi(): " + visible);
 
+        int resId;
         if (visible) {
-            int resId = android.R.drawable.stat_notify_voicemail;
-
+            if (Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.KEY_VOICEMAIL_BREATH, 0) == 1) {
+                resId = R.drawable.stat_notify_voicemail_breath;
+            } else {
+                resId = android.R.drawable.stat_notify_voicemail;
+            }
             // This Notification can get a lot fancier once we have more
             // information about the current voicemail messages.
             // (For example, the current voicemail system can't tell
