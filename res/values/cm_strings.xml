@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-     Copyright (C) 2013 The CyanogenMod Project
+     Copyright (C) 2013-2014 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -84,4 +84,8 @@
     <string name="phone_number_label">My phone number</string>
     <string name="phone_number_summary">Set the phone number for this device</string>
     <string name="msisdn_alpha_tag" translatable="false">Voice Line 1</string>
+
+    <!-- Noise suppression -->
+    <string name="noise_suppression_title">Noise suppression</string>
+    <string name="noise_suppression_summary">Enable noise suppression for calls</string>
 </resources>
