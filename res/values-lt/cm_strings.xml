@@ -40,16 +40,22 @@
     <string name="blacklist_title">Juodasis sąrašas</string>
     <string name="blacklist_summary_disabled">Išjungtas</string>
     <string name="blacklist_summary">Įeinantys skambučiai iš telefono numerių kurie yra juodajame sąraše bus blokuojami</string>
-    <string name="blacklist_notification">Skambutis užblokuotas iš %s</string>
-    <string name="blacklist_notification_private_number">Užblokuotas skambutis iš privataus numerio</string>
+    <string name="blacklist_call_notification">Skambutis užblokuotas iš %s</string>
+    <string name="blacklist_call_notification_private_number">Užblokuotas skambutis iš privataus numerio</string>
+    <string name="blacklist_call_notification_unknown_number">Užblokuotas skambutis iš nežinomo numerio %s</string>
+    <string name="blacklist_call_notification_multiple"><xliff:g id="count">%d</xliff:g> skambučiai buvo užblokuoti</string>
+    <string name="blacklist_message_notification">Užblokuotas pranešimas iš %s</string>
+    <string name="blacklist_message_notification_private_number">Užblokuotas pranešimas iš privataus numerio</string>
+    <string name="blacklist_message_notification_unknown_number">Užblokuotas pranešimas iš nežinomo numerio %s</string>
+    <string name="blacklist_message_notification_multiple"><xliff:g id="count">%d</xliff:g> pranešimai buvo užblokuoti</string>
     <string name="blacklist_notification_list_private">Privatus</string>
-    <string name="blacklist_notification_unknown_number">Užblokuotas skambutis iš nežinomo numerio %s</string>
-    <string name="blacklist_notification_multiple"><xliff:g id="count">%d</xliff:g> skambučiai buvo užblokuoti</string>
     <string name="unblock_number">Atblokuoti</string>
     <string name="mwi_notification_title">Pranešimų rodymas</string>
     <string name="mwi_notification_summary">Rodyti gaunamus balso pašto pranešimus</string>
-    <string name="perm_change_mobile_network">Pakeisti tinklą (2G/3G)</string>
+    <string name="perm_change_mobile_network">Pakeisti tinklą (2G / 3G)</string>
     <string name="perm_change_mobile_network_desc">Leisti programai keisti tarp 2G ir 3G duomenų bet kuriuo metu. 3G yra greitesnis bet sunaudoja daugiau baterijos, taip pat tai jums gali kainuoti daugiau pinigų.</string>
     <string name="phone_number_label">Mano telefono numeris</string>
     <string name="phone_number_summary">Įveskite prietaisui mobilųjį telefono numerį</string>
+    <string name="noise_suppression_title">Triukšmo slopinimas</string>
+    <string name="noise_suppression_summary">Įjungti triukšmo slopinimą skambučiams</string>
 </resources>
