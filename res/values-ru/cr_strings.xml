@@ -25,4 +25,13 @@
     <string name="call_end_sound_title">Звук при завершении вызова</string>
     <string name="call_end_sound_summary">Проигрывать звук при завершении вызова</string>
 	
+    <string name="number_lookup">Поиск номера телефона</string>
+    <string name="enable_forward_lookup_title">Включить прямой поиск</string>
+    <string name="enable_forward_lookup_summary">Показывать близлежащие места при поиске в номеронабирателе</string>
+    <string name="enable_reverse_lookup_title">Включить обратный поиск</string>
+    <string name="enable_reverse_lookup_summary">Поиск информации о человеке или месте для неизвестных номеров при входящих звонках</string>
+    <string name="choose_lookup_providers">Выбор провайдера для поиска</string>
+    <string name="choose_forward_lookup_provider_title">Выбрать провайдера для прямого поиска</string>
+    <string name="choose_reverse_lookup_provider_title">Выбрать провайдера для обратного поиска</string>
+	
 </resources>
