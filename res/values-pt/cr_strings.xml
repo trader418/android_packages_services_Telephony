@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Call UI in background -->
+    <string name="bg_incall">Chamada de entrada no fundo</string>
+    <string name="bg_incall_summary">Mantém a chamada de entrada no fundo quando a tela está ligada, somente mostra a notificação e toca o som da chamada</string>
+
+    <!-- Number lookup -->
+    <string name="number_lookup">Pesquisa de número de telefone</string>
+    <string name="enable_forward_lookup_title">Habilitar pesquisa direta</string>
+    <string name="enable_forward_lookup_summary">Mostrar lugares próximos quando pesquisar pelo discador</string>
+    <string name="enable_reverse_lookup_title">Habilitar pesquisa reversa</string>
+    <string name="enable_reverse_lookup_summary">Procure informações sobre a pessoa ou lugar para números desconhecidos nas chamadas recebidas</string>
+    <string name="choose_lookup_providers">Escolha de provedores de pesquisa</string>
+    <string name="choose_forward_lookup_provider_title">Escolha provedor de pesquisa direta</string>
+    <string name="choose_reverse_lookup_provider_title">Escolha provedor de pesquisa reversa</string>
+</resources>
