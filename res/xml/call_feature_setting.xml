@@ -145,6 +145,13 @@
             android:entryValues="@array/flip_action_setting_values"
             android:persistent="false" />
 
+        <CheckBoxPreference
+            android:key="bg_incall_screen"
+            android:title="@string/bg_incall"
+            android:persistent="false"
+            android:defaultValue="false"
+            android:summary="@string/bg_incall_summary"/>
+
         <PreferenceScreen
             android:key="button_respond_via_sms_key"
             android:title="@string/respond_via_sms_setting_title"
