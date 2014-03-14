@@ -124,10 +124,6 @@
     <string name="preferred_network_mode_gsm_only">GSM only</string>
     <string name="preferred_network_mode_gsm_wcdma_preferred">GSM/WCDMA preferred</string>
 
-    <string name="preference_category_interface">Interface</string>
-    <string name="non_intrusive_incall_title">Non intrusive</string>
-    <string name="non_intrusive_incall_summary">Use non intrusive dialog for incoming calls</string>
-
     <!-- Setting title for the flip action setting. -->
     <string name="flip_action_title">Flip action</string>
 
