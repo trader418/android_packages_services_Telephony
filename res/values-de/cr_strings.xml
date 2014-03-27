@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <!-- Call UI in background -->
+    <string name="bg_incall">Eingehende Anrufe im Hintergrund</string>
+    <string name="bg_incall_summary">Eingehende Anrufe erscheinen nicht im Vollbild wenn das Display eingeschaltet ist, sondern in Form einer Benachrichtigung.</string>
+
+    <!-- Setting title for the flip action setting. -->
+    <string name="flip_action_title">Gerät umdrehen (eingehende Anrufe)</string>
+
+    <!-- Dialog title of the flip action setting. -->
+    <string name="flip_action_dialog_title">Beim Umdrehen ...\u2026</string>
+
+    <!-- Setting summary for the flip action setting. -->
+    <string name="flip_action_summary">Verhalten beim Umdrehen des Gerätes: <xliff:g id="action">%s</xliff:g></string>
+
+    <!-- Values for flip action array entries -->
+    <string name="entry_do_nothing">Nichts unternehmen</string>
+    <string name="entry_mute_ringer">Klingelton stummschalten</string>
+    <string name="entry_dismiss_call">Anruf abweisen</string>
+    <string name="summary_do_nothing">Nichts unternehmen.</string>
+    <string name="summary_mute_ringer">Klingelton stummschalten.</string>
+    <string name="summary_dismiss_call">Anruf abweisen.</string>
+
+    <!-- Smart Phone Call -->
+    <string name="smart_phone_call_title">Schlauer Anruf</string>
+    <string name="smart_phone_call_summary">Legen Sie das Gerät an Ihr Ohr und es wählt automatisch die aktuell im Wählfeld oder einer Nachricht angezeigte Telefonnummer.</string>
+
+</resources>
