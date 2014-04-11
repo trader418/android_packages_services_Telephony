@@ -6,16 +6,6 @@
     <string name="bg_incall">Входящий вызов в фоне</string>
     <string name="bg_incall_summary">Удерживать входящий вызов в фоновом режиме при включенном экране, показывать только уведомление и воспроизводить мелодию звонка</string>
 
-    <!-- Number lookup -->
-    <string name="number_lookup">Поиск по номеру телефона</string>
-    <string name="enable_forward_lookup_title">Включить прямой поиск</string>
-    <string name="enable_forward_lookup_summary">Показывать близлежащие места при поиске в номеронабирателе</string>
-    <string name="enable_reverse_lookup_title">Включить обратный поиск</string>
-    <string name="enable_reverse_lookup_summary">Поиск информации о человеке или месте для неизвестных номеров при входящих звонках</string>
-    <string name="choose_lookup_providers">Выбор провайдера для поиска</string>
-    <string name="choose_forward_lookup_provider_title">Выбрать провайдера для прямого поиска</string>
-    <string name="choose_reverse_lookup_provider_title">Выбрать провайдера для обратного поиска</string>
-
     <!-- Setting title for the flip action setting. -->
     <string name="flip_action_title">Действие при перевороте</string>
 
