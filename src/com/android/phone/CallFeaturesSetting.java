@@ -195,6 +195,8 @@ public class CallFeaturesSetting extends PreferenceActivity
 
     private static final String BUTTON_CALL_UI_IN_BACKGROUND = "bg_incall_screen";
 
+    private static final String BUTTON_INCOMING_CALL_STYLE = "button_incoming_call_style";
+
     private static final String BUTTON_GSM_UMTS_OPTIONS = "button_gsm_more_expand_key";
     private static final String BUTTON_CDMA_OPTIONS = "button_cdma_more_expand_key";
 
@@ -310,6 +312,7 @@ public class CallFeaturesSetting extends PreferenceActivity
 
     private Preference mRingtonePreference;
     private CheckBoxPreference mVibrateWhenRinging;
+    private ListPreference mIncomingCallStyle;
     /** Whether dialpad plays DTMF tone or not. */
     private CheckBoxPreference mPlayDtmfTone;
     private CheckBoxPreference mButtonAutoRetry;
@@ -633,6 +636,10 @@ public class CallFeaturesSetting extends PreferenceActivity
             int index = mButtonDTMF.findIndexOfValue((String) objValue);
             Settings.System.putInt(mPhone.getContext().getContentResolver(),
                     Settings.System.DTMF_TONE_TYPE_WHEN_DIALING, index);
+        } else if (preference == mIncomingCallStyle) {
+            int index = mIncomingCallStyle.findIndexOfValue((String) objValue);
+            Settings.System.putInt(mPhone.getContext().getContentResolver(),
+                    Settings.System.INCOMING_CALL_STYLE, index);
         } else if (preference == mButtonTTY) {
             handleTTYChange(preference, objValue);
         } else if (preference == mButtonCallUiInBackground) {
@@ -1665,6 +1672,7 @@ public class CallFeaturesSetting extends PreferenceActivity
         mButtonBlacklist = (PreferenceScreen) findPreference(BUTTON_BLACKLIST);
         mFlipAction = (ListPreference) findPreference(FLIP_ACTION_KEY);
         mT9SearchInputLocale = (ListPreference) findPreference(BUTTON_T9_SEARCH_INPUT_LOCALE);
+        mIncomingCallStyle = (ListPreference) findPreference(BUTTON_INCOMING_CALL_STYLE);
 
         if (mVoicemailProviders != null) {
             mVoicemailProviders.setOnPreferenceChangeListener(this);
@@ -2011,6 +2019,14 @@ public class CallFeaturesSetting extends PreferenceActivity
             int dtmf = Settings.System.getInt(getContentResolver(),
                     Settings.System.DTMF_TONE_TYPE_WHEN_DIALING, Constants.DTMF_TONE_TYPE_NORMAL);
             mButtonDTMF.setValueIndex(dtmf);
+        }
+
+        if (mIncomingCallStyle != null) {
+            int style = Settings.System.getInt(getContentResolver(),
+                    Settings.System.INCOMING_CALL_STYLE,
+                    Settings.System.INCOMING_CALL_STYLE_FULLSCREEN_PHOTO);
+            mIncomingCallStyle.setOnPreferenceChangeListener(this);
+            mIncomingCallStyle.setValueIndex(style);
         }
 
         if (mButtonAutoRetry != null) {
