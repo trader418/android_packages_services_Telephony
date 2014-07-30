@@ -4,7 +4,9 @@
     
     <!-- Call UI in background -->
     <string name="bg_incall">Incoming call in background</string>
-    <string name="bg_incall_summary">Keep incoming call UI in background when screen is on, show notification and play ringtone only</string>
+    <string name="bg_incall_summary">Keep incoming call UI in background when screen is on, show notification and play ringtone only.</string>
+    <string name="bg_incall_as_heads_up">Show as heads up</string>
+    <string name="bg_incall_as_heads_up_summary">Show incoming call in background notification as heads up</string>
 
     <!-- Setting title for the flip action setting. -->
     <string name="flip_action_title">Flip action</string>
