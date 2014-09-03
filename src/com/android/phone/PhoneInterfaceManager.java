@@ -401,6 +401,12 @@ public class PhoneInterfaceManager extends ITelephony.Stub implements CallModele
             // Never allow the InCallScreen to appear on data-only devices.
             return false;
         }
+        if(PhoneGlobals.getInstance().isCsvtActive()) {
+            Log.d(LOG_TAG, "showCallScreenInternal: csvt is active");
+            Intent mIntent = new Intent("restore_video_call");
+            mApp.sendBroadcast(mIntent);
+            return false;
+        }
         if (isIdle()) {
             return false;
         }
@@ -488,6 +494,8 @@ public class PhoneInterfaceManager extends ITelephony.Stub implements CallModele
         // For now, protect this call with the MODIFY_PHONE_STATE permission.)
         enforceModifyPermission();
         sendRequestAsync(CMD_SILENCE_RINGER);
+        // If the Csvt ringer is playing, silence it.
+        silenceCsvtRinger();
     }
 
     /**
@@ -502,6 +510,11 @@ public class PhoneInterfaceManager extends ITelephony.Stub implements CallModele
             if (DBG) log("silenceRingerInternal: silencing...");
             mApp.notifier.silenceRinger();
         }
+    }
+
+    private void silenceCsvtRinger() {
+        Intent intent = new Intent("com.borqs.videocall.action.silencering");
+        mApp.sendBroadcast(intent);
     }
 
     public boolean isOffhook() {
