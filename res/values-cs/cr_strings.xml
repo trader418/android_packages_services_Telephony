@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="national_roaming">Národní datový roaming</string>
+    <string name="national_roaming_enable">Připojit k datovým službám během národního roamingu</string>
+    <string name="national_roaming_disable">Nepřipojovat k datovým službám během národního roamingu</string>
+    <!-- Proximity speaker -->
+    <string name="display_category_prox_auto_speaker_title">Nastavení proximity reproduktoru</string>
+    <string name="prox_auto_speaker_title">Automatický proximity reproduktor</string>
+    <string name="prox_auto_speaker_summary">Zapnout hlasitý reproduktor po oddálení telefonu od obličeje</string>
+    <string name="prox_auto_speaker_incall_only_title">Pouze při hovovoru</string>
+    <string name="prox_auto_speaker_incall_only_summary">Proximity senzor přepíná reproduktor, ale ne během vyzvánění</string>
+</resources>
