@@ -27,8 +27,6 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -294,14 +292,8 @@ public class NotificationMgr {
                 R.drawable.stat_notify_voicemail_sub3};
 
         int notificationId = getNotificationId(VOICEMAIL_NOTIFICATION, phoneId);
-        int resId;
         if (visible) {
-            if (Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.KEY_VOICEMAIL_BREATH, 0) == 1) {
-                resId = R.drawable.stat_notify_voicemail_breath;
-            } else {
-                resId = android.R.drawable.stat_notify_voicemail;
-            }
+            int resId = android.R.drawable.stat_notify_voicemail;
             if (PhoneUtils.isMultiSimEnabled()) {
                 resId = mwiIcon[phoneId];
             }
