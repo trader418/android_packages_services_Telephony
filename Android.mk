@@ -27,6 +27,8 @@ LOCAL_AAPT_FLAGS := \
     --extra-packages com.android.phone.common \
     --extra-packages com.android.services.telephony.sip
 
+LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
+
 LOCAL_PACKAGE_NAME := TeleService
 
 LOCAL_CERTIFICATE := platform
