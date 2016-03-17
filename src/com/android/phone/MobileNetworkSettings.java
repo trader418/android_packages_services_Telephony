@@ -1421,6 +1421,10 @@ public class MobileNetworkSettings extends PreferenceActivity
         } catch (NameNotFoundException e) {
             loge("NameNotFoundException for show4GFotLTE");
             return false;
+        } catch (Exception e) {
+            // Don't crash because of a missing resource.
+            // This is due to us having a togglable 4G option instead. 
+            return false;
         }
     }
 
